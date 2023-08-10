@@ -11,6 +11,12 @@ const images = {
   '02-localdev-mobile': '/images/launchweek/8/day2/localdev-mobile.svg',
   '03-studio3': '/images/launchweek/8/day3/studio3.svg',
   '03-studio3-mobile': '/images/launchweek/8/day3/studio3-mobile.svg',
+  '05-supavisor': '/images/launchweek/8/day5/supavisor.svg',
+  '05-community': '/images/launchweek/8/day5/community.svg',
+  '05-compliant': '/images/launchweek/8/day5/compliant.svg',
+  '05-supavisor-mobile': '/images/launchweek/8/day5/supavisor-mobile.svg',
+  '05-community-mobile': '/images/launchweek/8/day5/community-mobile.svg',
+  '05-compliant-mobile': '/images/launchweek/8/day5/compliant-mobile.svg',
 }
 
 export interface StepProps {
@@ -177,7 +183,7 @@ const days: WeekDayProps[] = [
   },
   {
     title: '',
-    shipped: false,
+    shipped: true,
     date: '11 Aug',
     publishedAt: '2023-08-11T00:00:00.000-07:00',
     description: '',
@@ -186,7 +192,35 @@ const days: WeekDayProps[] = [
     youtube_id: '',
     blogpost: '',
     docs: '',
-    steps: [],
+    steps: [
+      {
+        title: 'Supabase Supavisor: 1M Postgres connections',
+        blog: '/blog/supabase-supavisor-1m-pg-connections',
+        hackernews: '',
+        video: '',
+        twitter_spaces: '',
+        bg_layers: [{ img: images['05-supavisor'], mobileImg: images['05-supavisor-mobile'] }],
+        steps: [],
+      },
+      {
+        title: 'Community day',
+        blog: '/blog/lw8-community-day',
+        hackernews: '',
+        video: '',
+        twitter_spaces: '',
+        bg_layers: [{ img: images['05-community'], mobileImg: images['05-community-mobile'] }],
+        steps: [],
+      },
+      {
+        title: 'SOC2 type 2 and HIPAA  compliant',
+        blog: '/blog/soc2-type2-and-hipaa-compliant',
+        hackernews: '',
+        video: '',
+        twitter_spaces: '',
+        bg_layers: [{ img: images['05-compliant'], mobileImg: images['05-compliant-mobile'] }],
+        steps: [],
+      },
+    ],
   },
 ]
 
